@@ -6,10 +6,12 @@
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
 
+import "bootstrap";
+
 /**
  * Write any other JavaScript below
  */
 
-+( function() {
-  console.log('Hello, UOC!');
-} )();
++(function () {
+  console.log("Hello, UOC!");
+})();
