@@ -1,6 +1,31 @@
+@mixin tablet {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-family-titles;
+}
+.page {
+  font-family: $font-family-text;
+}
 .header {
   background-size: cover;
-  min-height: 100vh;
 }
 
 .navfooter__logolink,
@@ -29,4 +54,132 @@
 
 .info__icon {
   margin-right: 5px;
+}
+
+.navigation__title {
+  color: $pink !important;
+  font-family: "Audiowide", cursive;
+  margin-top: 0.8rem;
+}
+
+.navigation__link {
+  font-size: 1.2rem;
+}
+.navigation__link:hover,
+.navfooter__link:hover {
+  color: $pink !important;
+}
+
+.main {
+  background: url(../images/fondo.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/*
+.poster {
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.actuaciones {
+  font-weight: bold;
+  color: white;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.actuaciones__item {
+  list-style-type: none;
+  padding: 10px;
+  line-height: 1.2;
+}
+.poster__title {
+  color: $pink !important;
+  font-family: "Audiowide", cursive;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 3rem;
+}
+.poster__info {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.poster__block {
+  border: 1px solid white;
+  background: $pink;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+*/
+.poster {
+  width: 95%;
+  margin: 0 auto;
+  color: white;
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  align-items: center;
+  padding-bottom: 50px;
+  @include tablet {
+    width: 75%;
+  }
+  @include large {
+    width: 60%;
+  }
+}
+.actuaciones {
+  font-weight: bold;
+  color: white;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.actuaciones__item {
+  list-style-type: none;
+  padding: 10px;
+  line-height: 1.2;
+}
+.poster__title {
+  color: $pink !important;
+  font-family: "Audiowide", cursive;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 2.5rem;
+  @include tablet {
+    font-size: 2.7rem;
+  }
+  @include large {
+    font-size: 3rem;
+  }
+}
+.poster__info {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  @include tablet {
+    font-size: 1.7rem;
+  }
+}
+.poster__block {
+  border: 1px solid white;
+  background: $pink;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
