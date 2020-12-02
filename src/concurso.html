@@ -76,7 +76,7 @@
                         <li class="nav-item navigation__item">
                             <a
                                 class="nav-link navigation__link"
-                                href="gaming.html"
+                                href="actividades.html"
                                 >Actividades</a
                             >
                         </li>
@@ -84,6 +84,138 @@
                 </div>
             </nav>
         </header>
+        <main class="concurso">
+            <h1 class="concurso__title">CONCURSO DE COSPLAY</h1>
+            <p class="concurso__plazo">
+                Plazo de inscripción: del 1 de noviembre al 15 de diciembre de
+                2022.
+            </p>
+            <h2 class="concurso__inscr">Formulario de inscripción</h2>
+            <form
+                class="form"
+                name="concurso"
+                method="POST"
+                data-netlify="true"
+            >
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Datos personales</legend>
+                    <p class="form__obl">
+                        <i>Todos los campos con * son obligatorios</i>
+                    </p>
+                    <p class="form__field">
+                        <label class="form__label" for="name">Nombre*</label>
+                        <input
+                            class="form__input"
+                            id="name"
+                            type="text"
+                            name="name"
+                            required
+                        />
+                    </p>
+                    <p class="form__field">
+                        <label class="form__label" for="apellido1"
+                            >Primer apellido*</label
+                        >
+                        <input
+                            class="form__input"
+                            id="apellido1"
+                            type="text"
+                            name="apellido1"
+                            required
+                        />
+                    </p>
+                    <p class="form__field">
+                        <label class="form__label" for="apellido2"
+                            >Segundo apellido</label
+                        >
+                        <input
+                            class="form__input"
+                            id="apellido2"
+                            type="text"
+                            name="apellido2"
+                        />
+                    </p>
+                    <p class="form__field">
+                        <label class="form__label" for="email"
+                            >Correo electrónico*</label
+                        >
+                        <input
+                            class="form__input"
+                            id="email"
+                            type="text"
+                            name="email"
+                            value="Correo electrónico"
+                            required
+                        />
+                    </p>
+                    <p class="form__field">
+                        <label class="form__label" for="telf">Teléfono*</label>
+                        <input
+                            class="form__input"
+                            id="telf"
+                            type="text"
+                            name="telf"
+                            value="Teléfono"
+                            required
+                        />
+                    </p>
+                    <p class="form__field">
+                        <label class="form__label" for="genero">Género*</label>
+                        <select
+                            class="form__select"
+                            id="genero"
+                            name="genero"
+                            required
+                        >
+                            <option class="form__option" value="" selected>
+                                Género
+                            </option>
+                            <option class="form__option" value="manga">
+                                Manga
+                            </option>
+                            <option class="form__option" value="anime">
+                                Anime
+                            </option>
+                            <option class="form__option" value="comic">
+                                Cómic
+                            </option>
+                            <option class="form__option" value="videojuego">
+                                Videojuego
+                            </option>
+                            <option class="form__option" value="Otro">
+                                Otro
+                            </option>
+                        </select>
+                    </p>
+                    <p class="form__field">
+                        <input
+                            class="form__input"
+                            type="radio"
+                            id="individual"
+                            name="Modalidad"
+                            checked
+                        />
+                        <label class="form__label" for="individual"
+                            ><span></span>Individual</label
+                        >
+                        <input
+                            class="form__input"
+                            type="radio"
+                            id="grupal"
+                            name="Modalidad"
+                        />
+                        <label class="form__label" for="grupal"
+                            ><span></span>Grupal</label
+                        >
+                    </p>
+                    <div class="form__submit">
+                        <button class="form__button" type="submit">
+                            ENVIAR
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
         <footer class="footer">
             <div class="container-fluid info">
                 <div class="row">

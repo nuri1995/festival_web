@@ -20,8 +20,11 @@
  * Import layouts
  * It's a best practice to use a partial for each page
  */
-
-@import "layouts/home";
+@import "layouts/structure";
+@import "layouts/index";
+@import "layouts/musica";
+@import "layouts/concurso";
+@import "layouts/actividades";
 
 /**
  * Do NOT include anything else in this file!

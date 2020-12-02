@@ -1,0 +1,76 @@
+@mixin tablet {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-family-titles;
+  color: $pink;
+}
+
+.page {
+  font-family: $font-family-text;
+}
+
+.header {
+  background-size: cover;
+}
+
+.navfooter__logolink,
+.navfooter__list,
+.navfooter__rrss {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  text-align: center;
+}
+
+.navfooter__list {
+  flex-grow: 3;
+}
+
+.info {
+  background-color: $pink;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.info__col {
+  border: 1px solid white;
+  align-items: center;
+}
+
+.info__icon {
+  margin-right: 5px;
+}
+
+.navigation__title {
+  color: $pink !important;
+  font-family: "Audiowide", cursive;
+  margin-top: 0.8rem;
+}
+
+.navigation__link {
+  font-size: 1.2rem;
+}
+
+.navigation__link:hover,
+.navfooter__link:hover {
+  color: $pink !important;
+}
