@@ -7,7 +7,7 @@
   color: white;
 }
 
-.contenido {
+.concurso__contenido {
   width: 95%;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.2);
@@ -33,6 +33,10 @@
 .concurso__plazo {
   font-size: 1.1rem;
   margin-bottom: 30px;
+}
+
+.concurso__link {
+  color: $purple;
 }
 
 .form__fieldset {
