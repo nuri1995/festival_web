@@ -7,6 +7,7 @@
   padding-bottom: 30px;
   color: white;
 }
+
 .actividades__contenido {
   width: 95%;
   margin: 0 auto;
@@ -24,6 +25,7 @@
   @include desktop {
     width: 70%;
   }
+
   @include large {
     width: 60%;
   }
@@ -64,10 +66,12 @@
 .actividades__info {
   text-align: justify;
 }
+
 .cosplay {
   display: inline-block;
   text-align: left;
 }
+
 .cosplay__base {
   padding-bottom: 10px;
   padding-top: 10px;
