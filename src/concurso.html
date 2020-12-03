@@ -85,136 +85,164 @@
             </nav>
         </header>
         <main class="concurso">
-            <h1 class="concurso__title">CONCURSO DE COSPLAY</h1>
-            <p class="concurso__plazo">
-                Plazo de inscripción: del 1 de noviembre al 15 de diciembre de
-                2022.
-            </p>
-            <h2 class="concurso__inscr">Formulario de inscripción</h2>
-            <form
-                class="form"
-                name="concurso"
-                method="POST"
-                data-netlify="true"
-            >
-                <fieldset class="form__fieldset">
-                    <legend class="form__legend">Datos personales</legend>
-                    <p class="form__obl">
-                        <i>Todos los campos con * son obligatorios</i>
-                    </p>
-                    <p class="form__field">
-                        <label class="form__label" for="name">Nombre*</label>
-                        <input
-                            class="form__input"
-                            id="name"
-                            type="text"
-                            name="name"
-                            required
-                        />
-                    </p>
-                    <p class="form__field">
-                        <label class="form__label" for="apellido1"
-                            >Primer apellido*</label
-                        >
-                        <input
-                            class="form__input"
-                            id="apellido1"
-                            type="text"
-                            name="apellido1"
-                            required
-                        />
-                    </p>
-                    <p class="form__field">
-                        <label class="form__label" for="apellido2"
-                            >Segundo apellido</label
-                        >
-                        <input
-                            class="form__input"
-                            id="apellido2"
-                            type="text"
-                            name="apellido2"
-                        />
-                    </p>
-                    <p class="form__field">
-                        <label class="form__label" for="email"
-                            >Correo electrónico*</label
-                        >
-                        <input
-                            class="form__input"
-                            id="email"
-                            type="text"
-                            name="email"
-                            value="Correo electrónico"
-                            required
-                        />
-                    </p>
-                    <p class="form__field">
-                        <label class="form__label" for="telf">Teléfono*</label>
-                        <input
-                            class="form__input"
-                            id="telf"
-                            type="text"
-                            name="telf"
-                            value="Teléfono"
-                            required
-                        />
-                    </p>
-                    <p class="form__field">
-                        <label class="form__label" for="genero">Género*</label>
-                        <select
-                            class="form__select"
-                            id="genero"
-                            name="genero"
-                            required
-                        >
-                            <option class="form__option" value="" selected>
-                                Género
-                            </option>
-                            <option class="form__option" value="manga">
-                                Manga
-                            </option>
-                            <option class="form__option" value="anime">
-                                Anime
-                            </option>
-                            <option class="form__option" value="comic">
-                                Cómic
-                            </option>
-                            <option class="form__option" value="videojuego">
-                                Videojuego
-                            </option>
-                            <option class="form__option" value="Otro">
-                                Otro
-                            </option>
-                        </select>
-                    </p>
-                    <p class="form__field">
-                        <input
-                            class="form__input"
-                            type="radio"
-                            id="individual"
-                            name="Modalidad"
-                            checked
-                        />
-                        <label class="form__label" for="individual"
-                            ><span></span>Individual</label
-                        >
-                        <input
-                            class="form__input"
-                            type="radio"
-                            id="grupal"
-                            name="Modalidad"
-                        />
-                        <label class="form__label" for="grupal"
-                            ><span></span>Grupal</label
-                        >
-                    </p>
-                    <div class="form__submit">
-                        <button class="form__button" type="submit">
-                            ENVIAR
-                        </button>
-                    </div>
-                </fieldset>
-            </form>
+            <div class="contenido">
+                <h1 class="concurso__title">CONCURSO DE COSPLAY</h1>
+                <p class="concurso__plazo">
+                    <i class="fas fa-exclamation-triangle"></i> Plazo de
+                    inscripción: del 1 de noviembre al 15 de diciembre de 2022.
+                </p>
+                <h3 class="concurso__inscr">FORMULARIO DE INSCRIPCIÓN</h3>
+                <form
+                    class="form"
+                    name="concurso"
+                    method="POST"
+                    data-netlify="true"
+                >
+                    <fieldset class="form__fieldset">
+                        <p class="form__obl">
+                            <i>Todos los campos con * son obligatorios</i>
+                        </p>
+                        <div class="form-group form__field">
+                            <label class="form__label" for="name"
+                                >Nombre*</label
+                            >
+                            <input
+                                class="form-control form__input"
+                                id="name"
+                                type="text"
+                                name="name"
+                                required
+                            />
+                        </div>
+                        <div class="form-group form__field">
+                            <label class="form__label" for="apellido1"
+                                >Primer apellido*</label
+                            >
+                            <input
+                                class="form-control form__input"
+                                id="apellido1"
+                                type="text"
+                                name="apellido1"
+                                required
+                            />
+                        </div>
+                        <div class="form-group form__field">
+                            <label class="form__label" for="apellido2"
+                                >Segundo apellido</label
+                            >
+                            <input
+                                class="form-control form__input"
+                                id="apellido2"
+                                type="text"
+                                name="apellido2"
+                            />
+                        </div>
+                        <div class="form-group form__field">
+                            <label class="form__label" for="email"
+                                >Correo electrónico*</label
+                            >
+                            <input
+                                class="form-control form__input"
+                                id="email"
+                                type="text"
+                                name="email"
+                                required
+                            />
+                        </div>
+                        <div class="form-group form__field">
+                            <label class="form__label" for="telf"
+                                >Teléfono*</label
+                            >
+                            <input
+                                class="form-control form__input"
+                                id="telf"
+                                type="text"
+                                name="telf"
+                                required
+                            />
+                        </div>
+                        <div class="form-group form__field">
+                            <label class="form__label" for="motivo"
+                                >Motivo del Cosplay* (Indicar personaje y serie
+                                a la que pertenece)</label
+                            >
+                            <input
+                                class="form-control form__input"
+                                id="motivo"
+                                type="text"
+                                name="motivo"
+                                required
+                            />
+                        </div>
+                        <div class="form-group form__field">
+                            <label class="form__label" for="genero"
+                                >Género*</label
+                            >
+                            <select
+                                class="form-control form__select"
+                                id="genero"
+                                name="genero"
+                                required
+                            >
+                                <option class="form__option" value="" selected>
+                                    Género...
+                                </option>
+                                <option class="form__option">Manga</option>
+                                <option class="form__option">Anime</option>
+                                <option class="form__option">Cómic</option>
+                                <option class="form__option">Videojuego</option>
+                                <option class="form__option">Otro</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="form__label">Modalidad*</label>
+                        </div>
+                        <div class="form-group form__field">
+                            <div
+                                class="form-check form-check-inline form__field"
+                            >
+                                <input
+                                    class="form-check-input form__inpu"
+                                    type="radio"
+                                    name="Modalidad"
+                                    id="inlineRadio1"
+                                    value="individual"
+                                />
+                                <label
+                                    class="form-check-label"
+                                    for="inlineRadio1"
+                                    >Individual</label
+                                >
+                            </div>
+                            <div
+                                class="form-check form-check-inline form__field"
+                            >
+                                <input
+                                    class="form-check-input form__inpu"
+                                    type="radio"
+                                    name="Modalidad"
+                                    id="inlineRadio1"
+                                    value="grupal"
+                                />
+                                <label
+                                    class="form-check-label"
+                                    for="inlineRadio1"
+                                    >Grupal</label
+                                >
+                            </div>
+                        </div>
+                        <div class="form__submit">
+                            <button
+                                class="btn btn-secondary form__button"
+                                type="submit"
+                            >
+                                ENVIAR
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </main>
         <footer class="footer">
             <div class="container-fluid info">

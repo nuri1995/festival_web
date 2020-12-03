@@ -1,10 +1,12 @@
 @use "sass:color";
 
 $pink: #ff009d;
+$purple: #bda1f6;
 
 $font-family-titles: "Montserrat", sans-serif;
 $font-family-text: "Roboto", sans-serif;
 
 $theme-colors: (
-  "primary": orange,
+  "primary": $pink,
+  "secondary": $purple,
 );
