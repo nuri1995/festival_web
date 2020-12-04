@@ -82,3 +82,21 @@ h5 {
 .navfooter__link:hover {
   color: $pink !important;
 }
+
+.copyright {
+  align-content: center;
+  background-color: $purple;
+}
+
+.copyright__text {
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+  color: #343a40;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.copyright__link {
+  color: #343a40;
+}
