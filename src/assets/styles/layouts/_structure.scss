@@ -36,21 +36,19 @@ h5 {
   font-family: $font-family-text;
 }
 
-.header {
-  background-size: cover;
+.navigation__title {
+  color: $pink !important;
+  font-family: "Audiowide", cursive;
+  margin-top: 0.8rem;
 }
 
-.navfooter__logolink,
-.navfooter__list,
-.navfooter__rrss {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-  text-align: center;
+.navigation__link {
+  font-size: 1.2rem;
 }
 
-.navfooter__list {
-  flex-grow: 3;
+.navigation__link:hover,
+.navfooter__link:hover {
+  color: $pink !important;
 }
 
 .info {
@@ -68,19 +66,17 @@ h5 {
   margin-right: 5px;
 }
 
-.navigation__title {
-  color: $pink !important;
-  font-family: "Audiowide", cursive;
-  margin-top: 0.8rem;
+.navfooter__logolink,
+.navfooter__list,
+.navfooter__rrss {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  text-align: center;
 }
 
-.navigation__link {
-  font-size: 1.2rem;
-}
-
-.navigation__link:hover,
-.navfooter__link:hover {
-  color: $pink !important;
+.navfooter__list {
+  flex-grow: 3;
 }
 
 .copyright {
