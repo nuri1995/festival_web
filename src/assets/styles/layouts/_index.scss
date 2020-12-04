@@ -150,11 +150,10 @@
     background: rgb(0, 0, 0, 0.8);
     border-radius: 50px;
     width: fit-content;
-  }
 
-  .poster__item {
     &:nth-child(3) {
       order: 1;
+
       @include tablet {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
@@ -351,9 +350,7 @@
     background: rgb(255, 0, 157, 0.8);
     padding-top: 14px;
     padding-bottom: 14px;
-  }
 
-  .poster__block {
     &:nth-child(1) {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
